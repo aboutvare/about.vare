@@ -6,6 +6,22 @@ div.cssbox {
   display: inline-block;
 }
 
+@media screen and (max-width:1000px){div.cssbox{
+  height: auto;
+	max-width: 100% !important;
+	}}
+
+.cssbox a img {
+	max-width: 30%;
+	margin: 10px!important;
+	
+}
+
+@media screen and (max-width:1000px){.cssbox a img {
+	max-width: 80% !important;
+	
+}}
+
 span.cssbox_full {
   z-index: 10;
   position: absolute;
@@ -34,16 +50,14 @@ span.cssbox_full img {
   box-shadow: 0 0 20px black;
 }
 
-.cssbox_close{  
-	z-index: 50;
+a.cssbox_close{  
+  z-index: 20;
   position: fixed;
   text-decoration: none;
   visibility: inherit;
   color: white;
   font-size: 36px;
 }
-
-
 
 
 a.cssbox_close {
@@ -56,23 +70,9 @@ a.cssbox_close::before {
 
 }
 
-a.cssbox_prev,
-a.cssbox_next {
-  top: 50%;
-  transform: translate(0%, -50%);
-}
 
-a.cssbox_prev {
-  left: 5%;
-}
 
-a.cssbox_next {
-  right: 5%;
-}
-
-a:target ~ a.cssbox_close,
-a:target ~ a.cssbox_prev,
-a:target ~ a.cssbox_next {
+a:target ~ a.cssbox_close {
   visibility: visible;
 }
 
