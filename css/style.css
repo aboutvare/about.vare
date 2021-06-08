@@ -1340,11 +1340,12 @@ display: table;
   outline: none;
 }
 .fh5co-nav-toggle {
+  margin-left: 100px;
   width: 25px;
   height: 25px;
   cursor: pointer;
   text-decoration: none;
-  position: fixed !important;
+  position: absolute!important;
 }
 .fh5co-nav-toggle.active i::before, .fh5co-nav-toggle.active i::after {
   background: #444;
@@ -1427,6 +1428,9 @@ display: table;
   width: 44px;
   z-index: 2001;
   border-bottom: none !important;
+	  background: #f7ccb9;
+  margin: 0 0px 0 0px;
+  padding: 6px 8px 10px  9px;
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
