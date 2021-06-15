@@ -22,11 +22,8 @@ body {
   font-weight: 300;
   font-size: 13px;
   line-height: 1.7;
-   background-image: -o-radial-gradient(#cecece 11%, transparent 10%),
-     -o-radial-gradient(#cecece 11%, transparent 10%);
-   background-image: radial-gradient(#cecece 11%, transparent 10%),
+  background-image: radial-gradient(#cecece 11%, transparent 10%),
      radial-gradient(#cecece 11%, transparent 10%);
-  
   background-position: 0 0, 10px 80px;
   background-size: 20px 18px;
 }
@@ -43,6 +40,19 @@ body {
 	
 }}
 
+::i-block-chrome, body {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.7;
+   background-image: radial-gradient(#cecece 11%, transparent 10%),
+     radial-gradient(#cecece 11%, transparent 10%);
+  background-position: 0 0, 10px 80px;
+  background-size: 20px 18px;
+}
+
+
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -53,6 +63,18 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
+::i-block-chrome, #page {
+  position: relative;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  padding-top: 0em !important;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .offcanvas #page {
   overflow: hidden;
   position: absolute;
@@ -90,27 +112,33 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 400;
   margin: 0 0 20px 0;
 }
+
 ::-webkit-selection {
   color: #fff;
   background: #cabcab;
 }
+
 ::-moz-selection {
   color: #fff;
   background: #cabcab;
 }
+
 ::selection {
   color: #fff;
   background: #cabcab;
 }
+
 #nav-conteiner {
   background: #f7ccb9;
   max-height: 180px;
+ 
 }
+
 .fh5co-nav {
   position: relative;
   width: 100%;
   top: 63px;
-  left: 55px;
+  left: 15px;
   right: 0px;
   padding: 0px 0px 0 0;
   z-index: 100;
@@ -120,6 +148,18 @@ h1, h2, h3, h4, h5, h6, figure {
     position: relative;
     width: 100%;
     top: 63px;
+    left: 0px;
+    right: 0px;
+    padding: 0px 0px 0 0;
+    z-index:100;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .fh5co-nav {
+    position: relative;
+    width: 100%;
+    top: 47px;
     left: 0px;
     right: 0px;
     padding: 0px 0px 0 0;
@@ -230,6 +270,8 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-bottom: 5em;
   background: #fff;
 }
+
+
 .container-protfolio .row .vare-about img {
   max-width: 100%;
   height: auto;
@@ -515,7 +557,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .fh5co-nav {
-    padding: 50px 0;
+    padding: 25px 0;
   }
 }
 .fh5co-nav .fh5co-top-logo, .fh5co-nav .fh5co-top-menu, .fh5co-nav .fh5co-top-social {
@@ -1415,6 +1457,7 @@ display: table;
   -ms-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
 }
+
 .fh5co-nav-toggle {
   position: absolute;
   right: 0px;
@@ -1428,15 +1471,17 @@ display: table;
   width: 44px;
   z-index: 2001;
   border-bottom: none !important;
-	  background: #f7ccb9;
+  /*background: #f7ccb9;
   margin: 0 0px 0 0px;
-  padding: 6px 8px 10px  9px;
+  padding: 6px 8px 10px  9px;*/
 }
+
 @media screen and (max-width: 768px) {
   .fh5co-nav-toggle {
     display: block;
   }
 }
+
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
@@ -1449,6 +1494,7 @@ display: table;
   transition: 0.5s;
   padding: 8px 20px;
 }
+
 .btn.btn-md {
   padding: 8px 20px !important;
 }
