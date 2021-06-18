@@ -98,7 +98,7 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-a:hover, a:active, a:focus {
+a:hover, a:active,  {
   color: #ade8f4;
   outline: none;
   text-decoration: none;
@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding: 50px;
 }
 .info-portfolio img {
-  height: 70px;
+  height: 60px;
   width: auto;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -1203,7 +1203,7 @@ display: table;
    top: 0;
    right: -110px;
    bottom: 0;
-   padding: 40px 124px 40px 20px;
+   padding: 20px 124px 40px 20px;
    overflow-y: auto;
    display: none;
    -webkit-transform: translateX(270px);
